@@ -1,16 +1,11 @@
+import model.Guide;
 import model.Hiker;
 
 public class Main {
 
     public static void main(String[] args){
-        Hiker h1 = new Hiker("H001", "Kevin", "51234567",25,2);
-        System.out.println(h1.getName() + " | " + h1.getPhone() + " | age " + h1.getAge() + " | level " + h1.getFitnessLevel());
 
-
-        Hiker h2 = new Hiker("H002", "     ", "abc", 5, 7);
-
-        h1.setPhone("59955");
-        h1.setPhone("54848151");
-        System.out.println("New phone: " + h1.getPhone());
+        Guide g1 = new Guide("G001", "Sam", "547896",  -5, 0, 0);
+        System.out.println(g1.getPersonID() + " " + g1.getName() + " " + g1.getPhone() + " " + g1.getExperienceYears() + " " + g1.getMaxDifficulty() + " " + g1.getDailyRate());
     }
 }
