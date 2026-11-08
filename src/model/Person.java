@@ -48,4 +48,8 @@ public abstract class Person {
         this.phone = phone;
     }
 
+    @Override
+    public String toString(){
+        return "ID: " + personID + " | Name: " + name + " | Phone: " + phone;
+    }
 }

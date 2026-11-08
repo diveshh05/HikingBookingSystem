@@ -37,5 +37,8 @@ public class Hiker extends Person {
             this.fitnessLevel = fitnessLevel;
         }
     }
-
+    @Override
+    public String toString(){
+        return super.toString() + " | Age: " + age + " | Fitness Level " + fitnessLevel;
+    }
 }

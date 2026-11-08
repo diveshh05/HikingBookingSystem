@@ -49,4 +49,8 @@ public class Guide extends Person {
             this.dailyRate = dailyRate;
         }
     }
+    @Override
+    public String toString(){
+        return super.toString() + " | Experience: " + experienceYears + " | Max Difficulty: " + maxDifficulty + " | Daily Rate: Rs " + dailyRate;
+    }
 }
